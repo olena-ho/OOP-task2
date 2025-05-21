@@ -7,6 +7,7 @@ public class Product
 
     public Product(string name, Money price)
     {
+        //this is where I make sure the price doesn't take negative value from Money
         if (price.ToDouble() < 0)
             throw new InvalidOperationException("Product price cannot be negative.");
 

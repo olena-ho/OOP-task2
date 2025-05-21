@@ -2,6 +2,7 @@
 
 public class Money
 {
+    //I intentionally allow the number to be negative here, because the concept of money can have negative value (a debt, negative balance) in case we ever need the Money class for smth apart from price
     public int Major { get; set; }
     public int Minor { get; set; }
     public string Currency { get; set; }
